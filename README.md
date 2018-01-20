@@ -1,21 +1,21 @@
 # Waldo gradle tools
 
-This Gradle plugin allows to upload the latest version of your app to Waldo
+This Gradle plugin allows to upload the latest version of your app to Waldo.
+
 It simply interacts with our public API.
 
 ## Testing
 
-When testing, you can publish the plugin locally and fetch it from a test project.
-
-In project:
+When testing, you can publish the plugin locally:
 ```
 > ./gradlew clean build publishToMavenLocal
 ```
-In test project, add `mavenLocal()` at the top of buildScript repositories
+
+Then in a test project, add `mavenLocal()` at the top of buildScript repositories.
 
 ## Deploying
 
-When ready, make sure the version is upped, and use
+When ready, make sure the version is upped, and use:
 ```
 > ./gradlew publishPlugins
 ```
