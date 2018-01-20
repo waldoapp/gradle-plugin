@@ -1,6 +1,6 @@
 # Waldo gradle tools
 
-This Gradle plugin allows to upload the latest version of your app to Waldo.
+This Gradle plugin allows to upload the latest version of your app to [Waldo](https://www.waldo.io).
 
 It simply interacts with our public API.
 
