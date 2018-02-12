@@ -4,6 +4,8 @@ This Gradle plugin allows to upload the latest version of your app to [Waldo](ht
 
 It simply interacts with our public API.
 
+To see an example of how to integrate Waldo into your Gradle, refer to [our example app](https://github.com/waldoapp/android-oss/blob/master/README.md).
+
 ## Encryption
 
 This repo is encrypted with git-crypt.
