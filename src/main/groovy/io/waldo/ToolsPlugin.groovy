@@ -27,7 +27,7 @@ class ToolsPlugin implements Plugin<Project> {
         AppExtension android = project.android
 
         android.applicationVariants.all { ApplicationVariant variant ->
-            UploadTask task = project.tasks.create("upload${variant.name.capitalize()}ToWaldo", UploadTask)
+            UploadTask task = project.tasks.create("uploadVersionToWaldo${variant.name.capitalize()}", UploadTask)
             task.group = GROUP_NAME
             task.description = "Upload '${variant.name}' to Waldo (plugin: v${pluginVersion})"
             task.applicationVariant = variant

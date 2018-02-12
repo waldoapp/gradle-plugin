@@ -26,6 +26,20 @@ When testing, you can publish the plugin locally:
 
 Then in a test project, add `mavenLocal()` at the top of buildScript repositories.
 
+It should look something like this:
+
+```
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath 'io.waldo.tools:gradle-plugin:1.0.5'
+    }
+}
+```
+
 ## Deploying
 
 When ready, make sure the version is upped, and use:
